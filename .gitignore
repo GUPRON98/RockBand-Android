@@ -1,0 +1,17 @@
+build/
+*.keystore
+dummy.apk
+test.apk
+classes.dex
+extracted_jar/
+game_classes.jar
+.gradle/
+*.idsig
+local.properties
+patched_game.apk
+apktool_out/
+test_build.apk
+
+# Screenshots and temp logs
+/*.png
+*.log

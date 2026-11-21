@@ -1,0 +1,157 @@
+.class public final Lev;
+.super Lz;
+
+
+# instance fields
+.field public a:Lct;
+
+
+# direct methods
+.method public constructor <init>(II)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lz;-><init>(II)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lhl;II)Z
+    .locals 0
+
+    packed-switch p2, :pswitch_data_0
+
+    invoke-super {p0, p1, p2, p3}, Lhb;->a(Lhl;II)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    :pswitch_0
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1f
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final b()V
+    .locals 2
+
+    invoke-super {p0}, Lz;->b()V
+
+    iget-object v0, p0, Lhb;->q:Lay;
+
+    const/4 v1, 0x5
+
+    invoke-static {v0, v1}, Lcm;->l(Lay;I)Lct;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lev;->a:Lct;
+
+    return-void
+.end method
+
+.method public final c()V
+    .locals 10
+
+    invoke-super {p0}, Lz;->c()V
+
+    const/4 v0, 0x0
+
+    iget-object v1, p0, Lhb;->k:Lfc;
+
+    invoke-static {v0, v1}, Lcm;->a(ILfc;)Lhl;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lz;->L:Lef;
+
+    const/4 v2, 0x1
+
+    invoke-static {v2, v1}, Lcm;->a(ILfc;)Lhl;
+
+    move-result-object v1
+
+    check-cast v1, Lfc;
+
+    iget-object v3, p0, Lhb;->h:Ldi;
+
+    iget-short v3, v3, Lhl;->u:S
+
+    iget-object v4, p0, Lhb;->h:Ldi;
+
+    iget-short v4, v4, Lhl;->B:S
+
+    iget-object v5, p0, Lev;->a:Lct;
+
+    iget-short v5, v5, Lhl;->B:S
+
+    sub-int v6, v4, v5
+
+    int-to-short v6, v6
+
+    add-int/lit8 v7, v3, -0x4c
+
+    int-to-short v7, v7
+
+    iget-short v8, v1, Lhl;->u:S
+
+    sub-int v8, v7, v8
+
+    div-int/lit8 v8, v8, 0x2
+
+    int-to-short v8, v8
+
+    iget-object v9, p0, Lhb;->k:Lfc;
+
+    invoke-static {v3, v4, v9}, Lcm;->d(SSLhl;)V
+
+    invoke-static {v3, v4, v0}, Lcm;->d(SSLhl;)V
+
+    iget-object v0, p0, Lz;->L:Lef;
+
+    const/16 v3, 0x26
+
+    invoke-static {v3, v5, v7, v6, v0}, Lcm;->a(SSSSLhl;)V
+
+    iget-short v0, v1, Lhl;->y:S
+
+    iget-short v3, v1, Lhl;->A:S
+
+    invoke-static {v0, v3}, Lcm;->a(SS)[S
+
+    move-result-object v0
+
+    aget-short v0, v0, v2
+
+    invoke-static {v8, v0, v1}, Lcm;->c(SSLhl;)V
+
+    const/4 v0, 0x6
+
+    iget-object v1, p0, Lhb;->q:Lay;
+
+    invoke-static {v0, v1}, Lcm;->a(ILay;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lha;
+
+    iget-object v1, p0, Lz;->L:Lef;
+
+    invoke-static {v1, v0}, Lcm;->a(Lef;Lha;)V
+
+    return-void
+.end method
